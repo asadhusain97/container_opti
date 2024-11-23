@@ -1,0 +1,10 @@
+# config file for logging
+
+sink: "logs/log_{time:YYYYMMDD_HHMM}.log"
+rotation: "4 hours"
+retention: "6 months"
+level: "DEBUG"
+colorize: False
+backtrace: False
+diagnose: True
+format: "{time: MMM D, YYYY -- HH:mm:ss} | {level} -- <level> {message} </level>"
